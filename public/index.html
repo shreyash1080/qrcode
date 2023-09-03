@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 >QR Code Generator</h1>
+    </header>
+    <main>
+        <section class="qr-form">
+            <h2>Generate QR Code</h2>
+            <form id="qr-form">
+                <label for="url-input">Enter URL:</label>
+                <input type="text" id="url-input" placeholder="Enter a URL">
+                <button type="submit">Generate QR Code</button>
+            </form>
+        </section>
+        <section class="qr-result">
+            <h2>QR Code Image</h2>
+            <div id="qr-image-container">
+                <img id="qr-image" src="" alt="QR Code">
+            </div>
+            <a id="download-link" href="#" download="qr_code.png">Download QR Code</a>
+        </section>
+    </main>
+    <footer class="bottom">
+        <div class="bottom_container">
+            <a href="https://www.linkedin.com/in/shreyash-chougule/"><img src="images/images/linkedin-modified.png" alt="LinkedIn" style="width:50px"></a>
+            <a href="https://www.instagram.com/shreyash_chougule_1080/"><img src="images/images/insta-modified.png" alt="Instagram" style="width:50px"></a>
+            <a href="https://twitter.com/SAC1080"><img src="images/images/twiiter-modified.png" alt="Twitter" style="width:50px"></a>
+            <a href="E:\Web Devlopment\Web Devlopments\Forms.html"><img src="images/images/download-modified.png" alt="Gmail" style="width:50px"></a>
+            <p class="copyright">© Shreyash Chougule.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

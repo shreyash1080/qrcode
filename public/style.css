@@ -1,0 +1,61 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+/* Style the QR code image container */
+.qr-result {
+    text-align: center;
+}
+
+/* Style the download link */
+#download-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Style the footer */
+.bottom {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bottom_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-container a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottom-container a:hover {
+    transform: scale(1.2);
+}
+
+.bottom-container .copyright {
+    margin-top: 10px;
+}
