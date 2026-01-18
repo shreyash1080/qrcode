@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="google-site-verification=3fV3tUsvjbpyBX3RtMh5KclEWukuMmk_l5xlN4KKqUo" />
+    <title>QR Code Generator Online (Free) – Convert Link, Text & URL to QR</title>
     
-    <title>Free QR Code Generator | Convert Link & Text to QR Instantly</title>
+    <meta name="description" content="Free online QR Code Generator. Instantly convert URLs, links, or text into downloadable QR codes. Fast, secure, and futuristic interface. No signup required.">
     
-    <meta name="description" content="Generate high-quality QR codes for free. Instantly convert any link to QR, text to QR, or URL to QR with our futuristic QR Code Generator. No sign-up required.">
-    
-    <meta name="keywords" content="qr code generator, link to qr, text to qr, create qr code, free qr generator, url to qr, futuristic qr code">
+    <meta name="keywords" content="qr code generator, link to qr, text to qr, create qr code, free qr generator, url to qr, futuristic qr code, best qr code maker">
     
     <meta name="author" content="Shreyash Chougule">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <link rel="canonical" href="https://qrcodegenv.netlify.app/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-site-name.netlify.app/">
-    <meta property="og:title" content="QR NEXUS - Futuristic QR Code Generator">
-    <meta property="og:description" content="Convert links and text to QR codes instantly with a cool cyberpunk interface.">
-    <meta property="og:image" content="https://your-site-name.netlify.app/screenshot.png">
+    <meta property="og:url" content="https://qrcodegenv.netlify.app/">
+    <meta property="og:title" content="QR NEXUS | Free Futuristic QR Generator">
+    <meta property="og:description" content="Turn any link or text into a QR code instantly with this free tool.">
+    <meta property="og:image" content="https://qrcodegenv.netlify.app/images/screenshot.png">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://your-site-name.netlify.app/">
-    <meta property="twitter:title" content="QR NEXUS - Futuristic QR Code Generator">
-    <meta property="twitter:description" content="Convert links and text to QR codes instantly.">
-    <meta property="twitter:image" content="https://your-site-name.netlify.app/screenshot.png">
+    <meta property="twitter:url" content="https://qrcodegenv.netlify.app/">
+    <meta property="twitter:title" content="QR NEXUS | Free Futuristic QR Generator">
+    <meta property="twitter:description" content="Turn any link or text into a QR code instantly.">
+    <meta property="twitter:image" content="https://qrcodegenv.netlify.app/images/screenshot.png">
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -33,14 +36,18 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "QR NEXUS",
-      "url": "https://your-site-name.netlify.app/",
+      "url": "https://qrcodegenv.netlify.app/",
       "description": "A free tool to generate QR codes from links and text.",
       "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "All",
+      "operatingSystem": "Any",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Shreyash Chougule"
       }
     }
     </script>
@@ -61,39 +68,45 @@
     
     <main>
         <section class="qr-form card">
-            <h2><i class="fas fa-terminal"></i> Initialize Protocol</h2>
+            <h2><i class="fas fa-terminal"></i> Enter Link or Text</h2>
             <form id="qr-form">
                 <div class="input-group">
-                    <label for="url-input">Target Data / URL</label>
-                    <input type="text" id="url-input" placeholder="https://example.com" required autocomplete="off">
+                    <label for="url-input">Target URL / Text to Convert</label>
+                    <input type="text" id="url-input" placeholder="https://example.com" required autocomplete="off" aria-label="Enter link to generate QR">
                     <span class="focus-border"></span>
                 </div>
                 <button type="submit" id="submit-btn" class="cyber-btn">
-                    <span class="btn-text">GENERATE CODE</span>
+                    <span class="btn-text">GENERATE QR CODE</span>
                     <span class="btn-glitch"></span>
                 </button>
             </form>
         </section>
 
         <section class="qr-result card" id="result-section" style="display: none;">
-            <h2><i class="fas fa-check-circle"></i> Output Generated</h2>
+            <h2><i class="fas fa-check-circle"></i> QR Code Ready</h2>
             <div id="qr-image-container">
                 <div class="scan-line"></div>
-                <img id="qr-image" src="" alt="Generated QR Code from link or text">
+                <img id="qr-image" src="" alt="Generated QR Code from user link">
             </div>
             <a id="download-link" href="#" download="qr_code.png" class="cyber-btn secondary">
-                <span class="btn-text">DOWNLOAD ASSET</span>
+                <span class="btn-text">DOWNLOAD PNG</span>
             </a>
         </section>
+
+        <article style="max-width: 600px; margin: 2rem auto; text-align: center; opacity: 0.7; font-size: 0.8rem; color: var(--text-muted);">
+            <h3>About QR NEXUS</h3>
+            <p>QR NEXUS is a free <strong>online QR code generator</strong>. Easily convert <strong>link to QR</strong>, <strong>text to QR</strong>, or any URL into a high-quality image. Perfect for business cards, flyers, and digital sharing. Fast, secure, and works on all devices.</p>
+        </article>
+
     </main>
 
     <footer class="bottom">
         <div class="bottom_container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/shreyash-chougule/" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/shreyash-chougule/" target="_blank" aria-label="LinkedIn Profile">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/shreyash1080/qrcode" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/shreyash1080/qrcode" target="_blank" aria-label="GitHub Repository">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
