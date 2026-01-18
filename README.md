@@ -1,6 +1,6 @@
 # 🌌 QR NEXUS | Futuristic QR Generator
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/16af5d2b-d7b7-434f-b36b-bfa21852529f/deploy-status)](https://app.netlify.com/projects/qrcodegenv/deploys)
 ![GitHub license](https://img.shields.io/github/license/shreyash1080/qrcode)
 ![GitHub stars](https://img.shields.io/github/stars/shreyash1080/qrcode?style=social)
 
