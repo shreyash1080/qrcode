@@ -1,41 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
+    
+    <title>Free QR Code Generator | Convert Link & Text to QR Instantly</title>
+    
+    <meta name="description" content="Generate high-quality QR codes for free. Instantly convert any link to QR, text to QR, or URL to QR with our futuristic QR Code Generator. No sign-up required.">
+    
+    <meta name="keywords" content="qr code generator, link to qr, text to qr, create qr code, free qr generator, url to qr, futuristic qr code">
+    
+    <meta name="author" content="Shreyash Chougule">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-site-name.netlify.app/">
+    <meta property="og:title" content="QR NEXUS - Futuristic QR Code Generator">
+    <meta property="og:description" content="Convert links and text to QR codes instantly with a cool cyberpunk interface.">
+    <meta property="og:image" content="https://your-site-name.netlify.app/screenshot.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-site-name.netlify.app/">
+    <meta property="twitter:title" content="QR NEXUS - Futuristic QR Code Generator">
+    <meta property="twitter:description" content="Convert links and text to QR codes instantly.">
+    <meta property="twitter:image" content="https://your-site-name.netlify.app/screenshot.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "QR NEXUS",
+      "url": "https://your-site-name.netlify.app/",
+      "description": "A free tool to generate QR codes from links and text.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 <body>
     <header>
-        <h1 >QR Code Generator</h1>
+        <div class="header-content">
+            <h1>QR Code <span class="highlight">Generator</span></h1>
+            
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                <div class="sun-moon-container">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </div>
+            </button>
+        </div>
     </header>
+    
     <main>
-        <section class="qr-form">
-            <h2>Generate QR Code</h2>
+        <section class="qr-form card">
+            <h2><i class="fas fa-terminal"></i> Initialize Protocol</h2>
             <form id="qr-form">
-                <label for="url-input">Enter URL:</label>
-                <input type="text" id="url-input" placeholder="Enter a URL">
-                <button type="submit">Generate QR Code</button>
+                <div class="input-group">
+                    <label for="url-input">Target Data / URL</label>
+                    <input type="text" id="url-input" placeholder="https://example.com" required autocomplete="off">
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" id="submit-btn" class="cyber-btn">
+                    <span class="btn-text">GENERATE CODE</span>
+                    <span class="btn-glitch"></span>
+                </button>
             </form>
         </section>
-        <section class="qr-result">
-            <h2>QR Code Image</h2>
+
+        <section class="qr-result card" id="result-section" style="display: none;">
+            <h2><i class="fas fa-check-circle"></i> Output Generated</h2>
             <div id="qr-image-container">
-                <img id="qr-image" src="" alt="QR Code">
+                <div class="scan-line"></div>
+                <img id="qr-image" src="" alt="Generated QR Code from link or text">
             </div>
-            <a id="download-link" href="#" download="qr_code.png">Download QR Code</a>
+            <a id="download-link" href="#" download="qr_code.png" class="cyber-btn secondary">
+                <span class="btn-text">DOWNLOAD ASSET</span>
+            </a>
         </section>
     </main>
+
     <footer class="bottom">
         <div class="bottom_container">
-            <a href="https://www.linkedin.com/in/shreyash-chougule/"><img src="images/linkedin-modified.png" alt="LinkedIn" style="width:50px"></a>
-            <a href="https://www.instagram.com/shreyash_chougule_1080/"><img src="images/insta-modified.png" alt="Instagram" style="width:50px"></a>
-            <a href="https://twitter.com/SAC1080"><img src="images/twiiter-modified.png" alt="Twitter" style="width:50px"></a>
-            <a href="E:\Web Devlopment\Web Devlopments\Forms.html"><img src="images/download-modified.png" alt="Gmail" style="width:50px"></a>
-            <p class="copyright">© Shreyash Chougule.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shreyash-chougule/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/shreyash1080/qrcode" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p class="copyright">SYSTEM // SHREYASH CHOUGULE</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
